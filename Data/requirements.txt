@@ -1,0 +1,13 @@
+streamlit>=1.25.0
+pandas
+numpy
+openpyxl          
+geopy
+folium
+branca           
+streamlit-folium
+streamlit-geolocation
+st-aggrid 
+
+
+
