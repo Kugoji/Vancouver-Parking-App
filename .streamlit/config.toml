@@ -1,0 +1,32 @@
+[[theme.fontFaces]]
+family = "Poppins"
+url = "https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2"
+style = "normal"
+weight = "200"
+[[theme.fontFaces]]
+family = "Lato"
+url = "https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2"
+style = "normal"
+weight = "300"
+[[theme.fontFaces]]
+family = "Roboto"
+url = "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2"
+style = "normal"
+weight = "100" 
+[[theme.fontFaces]]
+family = "Inter"
+url = "https://fonts.gstatic.com/s/inter/v19/UcCo3FwrK3iLTcviYwYZ8UA3.woff2"
+style = "normal"
+weight = "100"
+[[theme.fontFaces]]
+family = "Roboto"
+url = "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2"
+style = "normal"
+weight = "200" 
+
+[theme]
+primaryColor = '#50DE61' 
+backgroundColor = '#4D4D4D'
+secondaryBackgroundColor = '#707070'
+textColor = '#FFFFFF' 
+font = "Roboto"
