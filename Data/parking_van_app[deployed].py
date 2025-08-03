@@ -24,6 +24,16 @@ def load_parking():
 
 park = load_parking()
 park_clean = park.dropna(subset='CREDITCARD')
+park_clean = park.dropna(subset='CREDITCARD')
+list_cols = ['R_MF_9A_6P', 'R_MF_6P_10', 'R_SA_9A_6P', 'R_SA_6P_10', 'R_SU_9A_6P', 
+      'R_SU_6P_10', 'RATE_MISC']
+park_clean[list_cols] = (
+    park_clean[list_cols]
+      .astype(str)
+      .replace(r'[\$,]', '', regex=True)      # drop $ and commas
+      .apply(pd.to_numeric, errors='coerce'))  # convert each column
+mask = park_clean['RATE_MISC'].notna()
+park_clean.loc[mask, list_cols] = park_clean.loc[mask, list_cols].add(park_clean.loc[mask, 'RATE_MISC'], axis = 0).round(2)
 
 st.session_state.setdefault("geo_placeholder", None)
 
@@ -185,7 +195,7 @@ with col3:
             st.markdown(
             f"""
             <div style="background-color:#2E2E2E; border-radius:5px">
-            <div style='font-size:32px; font-weight:700;'> &nbspRate (CAD/Hour): {park_list2.loc[park_list2['METERID'] == selected_row['METERID'], 'Rate'].values[0]}</div>
+            <div style='font-size:32px; font-weight:700;'> &nbspRate (CAD/Hour): ${park_list2.loc[park_list2['METERID'] == selected_row['METERID'], 'Rate'].values[0]}0</div>
             <div style='font-size:32px; font-weight:700; margin-top:-13px;'> &nbspTime Limit: {park_list2.loc[park_list2['METERID'] == selected_row['METERID'], 'Time_Limit'].values[0]}</div>
             <div style='font-size:32px; font-weight:700; margin-top:-13px;'> &nbspDistance: {distance_km}km</div>
             <div style='font-size:32px; font-weight:700; margin-top:-13px;'> &nbspWalking Time: {round((distance_km * 10))} min</div>
