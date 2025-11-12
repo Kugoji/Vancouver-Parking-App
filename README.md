@@ -5,7 +5,7 @@ Here's the link to interact with the app directly: https://van-parking-meters.st
 ## How It's Made
 **Tech & Libraries used:** Python, Streamlit, Pandas, Numpy, Folium  
 
-To make this app, I did the coding within `Python`, utilizing the `Streamlit` library in order to design the front-end. The app is based on parking meter data sourced directly from The City of Vancouver Open Data Portal and as such, has a very comprehensive selection of all the parking meters within the city. 
+To make this app, I did the coding within `Python`, utilizing the `streamlit` library in order to design the front-end. The app is based on parking meter data sourced directly from `The City of Vancouver Open Data Portal` and as such, has a very comprehensive selection of all the parking meters within the city. 
 
 To use this app, the user must first select the `day` and `time` they would like to park. The user can also decide to show only parking meters that have `credit cards` as a form of payment. If left empty, the app will show **all meters** that match the other selected criteria, regardless of the forms of payment they offer. From there, the user must then allow their location to be shared as the app will use the user's location to display all the parking meters based on proximity. 
 
