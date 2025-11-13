@@ -3,7 +3,7 @@ A fun project of mine where I made an app that shows the nearest parking meters 
 Here's the link to interact with the app directly: https://van-parking-meters.streamlit.app 
 
 ## How It's Made
-**Tech & Libraries used:** Python, Streamlit, Pandas, Numpy, Folium  
+**Tech & Libraries used:** `Python`, `Streamlit`, `Pandas`, `Numpy`, `Folium`  
 
 To make this app, I did the coding within `Python`, utilizing the `streamlit` library in order to design the front-end. The app is based on parking meter data sourced directly from `The City of Vancouver Open Data Portal` and as such, has a very comprehensive selection of all the parking meters within the city. 
 
