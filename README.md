@@ -1,5 +1,6 @@
 # Vancouver Parking Finder App
 A fun project of mine where I made an app that shows the nearest parking meters in **Vancouver, BC** relative to the user's location while also displaying important info about the meter.  
+
 Here's the link to interact with the app directly: https://van-parking-meters.streamlit.app 
 
 ## How It's Made
